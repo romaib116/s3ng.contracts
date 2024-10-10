@@ -1,22 +1,22 @@
-syntax = "proto3";
+п»їsyntax = "proto3";
 
 option csharp_namespace = "s3ng.Contracts.IAM";
 
 package registration;
 
-//Сервис регистрации
+//РЎРµСЂРІРёСЃ СЂРµРіРёСЃС‚СЂР°С†РёРё
 service Registration {
- //Зарегистрировать пользователя	
+ //Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ	
 rpc RegisterUser (RegisterRequest) returns (RegisterResponse);
 }
 
-//Запрос на регистрацию
+//Р—Р°РїСЂРѕСЃ РЅР° СЂРµРіРёСЃС‚СЂР°С†РёСЋ
 message RegisterRequest {
   string login = 1;
   string password = 2;
 }
 
-//Результат регистрации
+//Р РµР·СѓР»СЊС‚Р°С‚ СЂРµРіРёСЃС‚СЂР°С†РёРё
 message RegisterResponse {
   string message = 1;
   bool success = 2;
