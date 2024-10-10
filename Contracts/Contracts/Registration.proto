@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "s3ng.Contracts.IAM";
 
-package greet;
+package registration;
 
 // Сервис регистрации
 service Registration {
