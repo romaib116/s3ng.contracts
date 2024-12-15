@@ -28,7 +28,6 @@ message AuthenicationRequest {
 
 //Результат авторизации
 message AuthenticationResponse {
-  string message = 1;
-  AuthenticationResult result = 2;
-  string token = 3;
+  AuthenticationResult result = 1;
+  string token = 2;
 }
