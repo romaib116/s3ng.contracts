@@ -30,4 +30,5 @@ message AuthenicationRequest {
 message AuthenticationResponse {
   string message = 1;
   AuthenticationResult result = 2;
+  string token = 3;
 }
