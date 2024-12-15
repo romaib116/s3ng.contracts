@@ -7,7 +7,7 @@ package authentication;
 //Сервис аутентификации
 service Authentication {
  //Аутентифицировать пользователя	
-rpc AuthenticateUser (AuthenicationRequest) returns (AuthenticationResponse);
+rpc AuthenticateUser (AuthenticationRequest) returns (AuthenticationResponse);
 }
 
 //Перечисление результата аутентификации
