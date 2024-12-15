@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option csharp_namespace = "s3ng.Contracts.IAM";
+
+package authentication;
+
+//Сервис аутентификации
+service Authentication {
+ //Аутентифицировать пользователя	
+rpc AuthenticateUser (AuthenicationRequest) returns (AuthenticationResponse);
+}
+
+//Перечисление результата аутентификации
+enum AuthenticationResult {
+	//Неизвестно
+	unspecified = 0;
+	//Пользователь не найден
+	userNotFound = 1;
+	//Некорректный пароль
+	badPassword = 2;
+}
+
+//Запрос на авторизацию
+message AuthenicationRequest {
+  string login = 1;
+  string password = 2;
+}
+
+//Результат авторизации
+message AuthenticationResponse {
+  string message = 1;
+  AuthenticationResult result = 2;
+}

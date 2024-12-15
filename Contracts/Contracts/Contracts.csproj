@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Authentication.proto" />
     <None Remove="Registration.proto" />
   </ItemGroup>
 
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Protobuf Include="Authentication.proto" />
     <Protobuf Include="Registration.proto" />
   </ItemGroup>
 
