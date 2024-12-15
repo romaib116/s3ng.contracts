@@ -18,6 +18,8 @@ enum AuthenticationResult {
 	userNotFound = 1;
 	//Некорректный пароль
 	badPassword = 2;
+	//Успех
+	success = 3;
 }
 
 //Запрос на авторизацию
