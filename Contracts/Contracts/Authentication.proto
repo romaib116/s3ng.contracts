@@ -32,6 +32,8 @@ enum RefreshTokenResult{
 	REFRESH_USER_NOT_FOUND = 1;
 	//Некорректный рефреш токен
 	REFRESH_INVALID_TOKEN = 2;
+	//Успех
+	REFRESH_SUCCESS = 3;
 }
 
 //Запрос на авторизацию
